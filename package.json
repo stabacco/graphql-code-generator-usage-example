@@ -1,0 +1,27 @@
+{
+  "name": "codegen-video",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "generate": "gql-gen --url http://localhost:3000/graphql --template ts --out ./src/types.d.ts",
+    "buildSchema": "tsc ./src/schema.ts --outDir ./dist/schema/",
+    "custom-template": "gql-gen --export ./dist/schema/schema.js --project ./src/models/"
+  },
+  "dependencies": {
+    "@types/node": "^8.0.34",
+    "apollo-server-express": "^1.1.6",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "graphql": "0.10.5",
+    "graphql-code-generator": "^0.8.13",
+    "graphql-tag": "^2.4.2",
+    "graphql-tools": "1.2.1",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.12.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "flattenTypes": true,
+  "primitives": {
+    "String": "string",
+    "Int": "number",
+    "Float": "number",
+    "Boolean": "boolean",
+    "ID": "string"
+  },
+  "customHelpers": {
+    "filterModelFields": "./generators-helpers/filter-model-fields.js",
+    "toMongooseType": "./generators-helpers/to-mongoose-type.js",
+    "isArray": "./generators-helpers/is-array.js"
+  }
+}
