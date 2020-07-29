@@ -1,6 +1,7 @@
 const Handlebars = require('handlebars');
 
 function isArray(field, options) {
+
   if (!field) {
     return '';
   }

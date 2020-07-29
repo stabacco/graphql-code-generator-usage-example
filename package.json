@@ -6,8 +6,8 @@
   "scripts": {
     "start": "ts-node src/main.ts",
     "generate": "gql-gen --url http://localhost:3000/graphql --template ts --out ./src/types.d.ts",
-    "buildSchema": "tsc ./src/schema.ts --outDir ./dist/schema/",
-    "custom-template": "gql-gen --export ./dist/schema/schema.js --project ./src/models/"
+    "build-schema": "tsc ./src/schema.ts --outDir ./dist/schema/",
+    "custom-template": "gql-gen --url http://localhost:8080/graphql/ --project ./src/models/"
   },
   "dependencies": {
     "@types/node": "^8.0.34",
@@ -17,6 +17,7 @@
     "express": "^4.16.2",
     "graphql": "0.10.5",
     "graphql-code-generator": "^0.8.13",
+    "graphql-codegen-core": "^0.18.2",
     "graphql-tag": "^2.4.2",
     "graphql-tools": "1.2.1",
     "mongodb": "^2.2.31",

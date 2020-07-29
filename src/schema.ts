@@ -27,6 +27,14 @@ const typeDefs = gql`
     query: Query
   }
 
+  "This is an enum"
+  enum Stef {
+    "This is real"
+    REAL
+    "This is false"
+    FALSE
+  }
+
 `;
 
 export const schema = makeExecutableSchema({

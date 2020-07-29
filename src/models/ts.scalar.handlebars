@@ -1,7 +1,0 @@
-/* tslint:disable */
-
-{{#eachImport this }}
-import { {{ name }} } from './{{ file }}';
-{{/eachImport}}
-{{ toComment description }}
-export type {{ name }} = any;

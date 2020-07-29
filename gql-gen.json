@@ -1,15 +1,16 @@
 {
-  "flattenTypes": true,
+  "flattenTypes": false,
   "primitives": {
-    "String": "string",
-    "Int": "number",
-    "Float": "number",
-    "Boolean": "boolean",
-    "ID": "string"
+    "String": "str",
+    "Int": "int",
+    "Float": "float",
+    "Boolean": "bool",
+    "ID": "str"
   },
   "customHelpers": {
-    "filterModelFields": "./generators-helpers/filter-model-fields.js",
-    "toMongooseType": "./generators-helpers/to-mongoose-type.js",
-    "isArray": "./generators-helpers/is-array.js"
+    "isArray": "./generators-helpers/is-array.js",
+    "snakeCaseFields": "./generators-helpers/snake-case-fields.js",
+    "registerPartials": "./generators-helpers/register-partials.js"
   }
 }
+

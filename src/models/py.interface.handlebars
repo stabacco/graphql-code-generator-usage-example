@@ -1,0 +1,10 @@
+{{> declareImports }}
+
+@attr.s(kw_only=True, auto_attribs=True)
+class {{name}}{{> baseClasses }}:
+    {{> docstring }}
+{{#each fields}}
+  {{#unless isDeprecated}} 
+    {{> declareField }} = attr.ib()
+  {{/unless}}
+{{/each}}

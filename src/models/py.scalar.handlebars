@@ -1,0 +1,9 @@
+
+{{> declareImports }}
+
+@attr.s(kw_only=True)
+class {{name}}{{> baseClasses}}:
+    """{{ description }}
+    """
+    # TODO: not sure about this
+    value = attr.ib()

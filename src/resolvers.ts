@@ -25,7 +25,7 @@ export const resolvers = {
   },
   Post: {
     author(post) {
-      return authors.find(author => author.id === post.authorId);
+      return authors.filter(author => author.id === post.authorId);
     },
   }
 };
